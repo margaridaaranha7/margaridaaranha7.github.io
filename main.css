@@ -2,33 +2,24 @@ body {
     height: 100vh;
     margin: 0px;
     padding: 0px;
-
     display: flex;
-
     background-color: #f2e6f7;
     opacity: 1;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f2e6f7 21px ), repeating-linear-gradient( #cda9e355, #cda9e3 );
     background-size: cover;
-
     color: #2c3e50;
     font-family: 'Mono', monospace;
 }
 
-.main-container {
-
-    
-
+.main-container { 
     background: rgba(255, 255, 255, 0.22);
     border-radius: 27px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.4px);
-    -webkit-backdrop-filter: blur(3.4px);
-
     width: 45vw;
     margin: 4vh auto;
     padding-inline: 50px;
     padding-block: 50px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +39,6 @@ body {
     text-align: left;
     margin-left: 24px;
 }
-
 
 #profile_pic{
     border-radius: 100%;
@@ -72,13 +62,13 @@ body {
 .social-container {
     display: grid;
     grid-template-columns: repeat(3, 32px);
-    column-gap: 28px;
+    column-gap: 42px;
     margin-block-start: 1rem;
 }
 
 .icons {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     color: #2c3e50;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 1s;
@@ -91,7 +81,6 @@ body {
 .btn{
 margin-block: 1rem;
 padding: 14px 24px;
-
 border-radius: 50px;
 background-color: #cda9e3;
 color: #2c3e50;
@@ -99,7 +88,6 @@ text-decoration: none;
 font-size: 1.2rem;
 font-weight: 500;
 cursor: pointer;
-
 transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 transition-duration: 1s;
 }
@@ -112,14 +100,14 @@ transition-duration: 1s;
 @keyframes typing {
     from { width: 0 }
     to { width: 300px }
-  }
+}
 
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #2c3e50; }
-  }
+}
 
-  @media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1120px) {
 
     body {
         height: 100%;
@@ -150,4 +138,4 @@ transition-duration: 1s;
     .main-container{
         margin: 2vh auto;
     }
-  }
+}
